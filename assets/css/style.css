@@ -1,6 +1,38 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
 }
+
+.container {
+  padding: 0 15px;
+}
+
+@media (min-width: 575.98px){
+  .container {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 767.98px){
+  .container {
+    max-width: 720px;   
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1140px;
+  }
+}
+
 .about__section{
     height: 100vh;
     max-height: 1080px;
@@ -17,11 +49,11 @@ body{
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,.28  );
-    z-index: 2;
+    z-index: 1;
 }
 
 .about__content{
-    width: 35%;
+    width: 37%;
     height: 19%;
     position: absolute;
     left: 47%;
@@ -29,6 +61,128 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+}
+
+.about__content h1{
+    background-color: black;
+    color: white;
+    z-index: 3;
+    padding: 3vh;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.about__content h2{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    z-index: 3;
 }
 
 
+
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 5;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation, .aboutus{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navigation{
+    margin-right: 70px;
+}
+
+.section__heading{
+    text-align: center;
+    color: #CE9B3D;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.section__heading:after{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: #CE9B3D;
+}
+
+
+.abonement{
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.abonement__heading, .abonement__subheading{
+    margin: 0;
+    padding: 0;
+}
+
+.abonement__subheading{
+    margin-bottom: 10px;
+}
+.abonement__desc{
+    white-space: pre-wrap;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.abonement__heading{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.abonement__subheading{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.abonement__price, .currency, .ot{
+    font-weight: 700;
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.price__content{
+    text-align: right;
+}
+
+.abonements__section{
+    position: relative;
+}
+
+.abonement__backimg{
+    height: 120%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

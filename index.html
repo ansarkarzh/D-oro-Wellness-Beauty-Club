@@ -4,21 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>"D'oro" Wellness & Beauty Club</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <div class="logo"> лого </div>        
-        <div class="navigation">Наши Услуги</div>
-        <div class="aboutus">О нас</div>
+        <div class="container">
+            <div class="logo"> лого </div> 
+            <div class="nav__content">       
+                <div class="navigation">Наши Услуги <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+</svg> </div>
+                <div class="aboutus">О нас</div>
+            </div> 
+        </div> 
     </header>
     <section class="about__section">
+        <div class="container">
         <div class="about__content">
             <h1>"D'oro" Wellness & Beauty Club</h1>
             <h2>Первый FitnessCenter&SPA</h2>
         </div>
+    </div>
+    </section>
+    <section class="abonements__section">
+        <div class="container abonements">
+            <div class="section__heading">
+                Абонементы
+            </div>
+            <div class="abonement__content">
+                <div class="abonement">
+                    <h3 class="abonement__heading">
+                        Тренажёрный зал
+                    </h3>
+                    <h4 class="abonement__subheading"></h4>
+                    <div class="abonement__desc">12 посещений
+При первом посещении полная инструкция
+и базовая программа тренировок</div>
+                    <div class="price__content"><span class="abonement__price">14000</span><span class="currency">тнг</span></div>
+                </div>
+                <div class="abonement">
+                    <h3 class="abonement__heading">
+                        Аэробный зал
+                    </h3>
+                    <h4 class="abonement__subheading">(Групповые программы)</h4>
+                    <div class="abonement__desc">10 посещений
+любых групповых программ</div>
+                    <div class="price__content"><span class="abonement__price">14000</span><span class="currency">тнг</span></div>
+                </div>
+                <div class="abonement">
+                    <h3 class="abonement__heading">
+                        Безлимимтный абонемент
+                    </h3>
+                    <h4 class="abonement__subheading">(тренажёрный зал + аэробный зал)</h4>
+                    <div class="abonement__desc">Неограниченное количество посещений
+тренажерного и аэробного залов</div>
+                    <div class="price__content"><span class="abonement__price">25000</span><span class="currency">тнг</span></div>
+                </div>
+                <div class="abonement">
+                    <h3 class="abonement__heading">
+                        Персональные абонементы
+                    </h3>
+                    <div class="abonement__desc">В зависимости от тренера
+*уточнять у администраторов</div>
+                    <div class="price__content"><span class="ot">от</span><span class="abonement__price">23000</span><span class="currency">тнг</span></div>
+                    <div class="price__content"><span class="ot">до</span><span class="abonement__price">45000</span><span class="currency">тнг</span></div>
+                </div>
+
+            </div>
+
+        </div>
+        <img src="assets/img/flower.png" alt="" class="abonement__backimg">
     </section>
 </body>
 </html>
