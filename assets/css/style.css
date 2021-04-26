@@ -139,7 +139,7 @@ header .container{
 
 .abonement{
     margin-bottom: 30px;
-    width: 60%;
+    width:47%;
 }
 
 .abonement__heading, .abonement__subheading{
@@ -152,23 +152,23 @@ header .container{
 }
 .abonement__desc{
     white-space: pre-wrap;
-    font-size: 28px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 .abonement__heading{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 .abonement__subheading{
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .abonement__price, .currency, .ot{
     font-weight: 700;
-    font-size: 28px;
+    font-size: 16px;
     margin-right: 5px;
 }
 
@@ -185,4 +185,21 @@ header .container{
     position: absolute;
     right: 0;
     top: 0;
+}
+
+.abonement__wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.abonement__content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.abonement__content img{
+    width: 100%;
+    height: auto;
 }
