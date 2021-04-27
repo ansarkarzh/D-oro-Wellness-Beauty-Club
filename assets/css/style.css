@@ -238,3 +238,24 @@ header .container{
     background-color: white;
 }
 
+.spa__section{
+    background: url(../img/mermaids.jpg) no-repeat;
+    background-position: left top;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.spa__wrapper{
+    background-color: rgba(0,0,0,.6  );
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50%;
+}
+
+.centered__spa{
+    text-align: center;
+    margin: 20px auto;
+}
