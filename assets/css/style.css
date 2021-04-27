@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 100px;
+    background-color: #fffdf6
 }
 
 .container {
@@ -121,7 +122,7 @@ header .container{
     color: #CE9B3D;
     font-size: 35px;
     font-weight: 700;
-    margin-top: 60px;
+    padding-top: 60px;
     position: relative;
     margin-bottom: 70px;
 }
@@ -129,7 +130,7 @@ header .container{
 .section__heading:after{
     content: "";
     position: absolute;
-    top: 60px;
+    top: 120px;
     left: 0;
     height: 8px;
     width: 100%;
@@ -190,6 +191,7 @@ header .container{
 .abonement__wrapper{
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
 
 .abonement__content{
@@ -199,7 +201,40 @@ header .container{
     justify-content: space-between;
 }
 
-.abonement__content img{
+.abonement__content2{
+    width: 50%;
+}
+
+.abonement__content2 img{
     width: 100%;
     height: auto;
+    margin-bottom: -7px;
 }
+
+.black{
+    background-color: black;
+    color: white;
+}
+
+.centered{
+    text-align: center;
+    margin: 90px auto;
+}
+
+
+.centered2{
+    text-align: center;
+    margin: 5px auto;
+}
+
+.bottom__line{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+
+.white{
+    background-color: white;
+}
+
