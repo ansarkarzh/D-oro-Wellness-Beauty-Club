@@ -512,3 +512,20 @@ header .header__wrapper{
         font-size: 10px;
     }
 }
+
+.slider__section{
+    margin: 20px 0;
+}
+
+.splide__slide img {
+	width : 100%;
+	height: auto;
+}
+
+#secondary-slider{
+    margin-top: 20px;
+}
+
+.splide__track, .splide__list, .splide__slide, .splide__slide img{
+    border-radius: 8%;
+}

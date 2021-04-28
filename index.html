@@ -9,6 +9,10 @@
     <title>"D'oro" Wellness & Beauty Club</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
 </head>
 <body>
     <header>
@@ -28,6 +32,43 @@
             <h1>"D'oro" Wellness & Beauty Club</h1>
             <h2>Первый FitnessCenter&SPA</h2>
          </div>
+    </section>
+    <section class="slider__section">
+        <div class="container">
+            <div class="section__heading">
+                Фотоальбом
+            </div>
+            <div id="primary-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="assets/img/blueandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/greenandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="secondary-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="assets/img/blueandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/greenandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="abonements__section">
         <div class="container abonements">
@@ -286,6 +327,35 @@
         </div>
 
     </section>
+
+    <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+	var secondarySlider = new Splide( '#secondary-slider', {
+		fixedWidth  : 100,
+		height      : 80,
+		gap         : 10,
+		cover       : true,
+		isNavigation: true,
+		focus       : 'center',
+		breakpoints : {
+			'600': {
+				fixedWidth: 66,
+				height    : 40,
+			}
+		},
+	} ).mount();
+	
+	var primarySlider = new Splide( '#primary-slider', {
+		type       : 'fade',
+		heightRatio: 0.5,
+		pagination : false,
+		arrows     : false,
+		cover      : true,
+	} ); // do not call mount() here.
+	
+	primarySlider.sync( secondarySlider ).mount();
+} );
+    </script>
 
 
 </body>
