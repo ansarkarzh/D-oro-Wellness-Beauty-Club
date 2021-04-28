@@ -37,7 +37,7 @@ body{
 .about__section{
     height: 100vh;
     max-height: 1080px;
-    background: url(../img/1-back.jpg) no-repeat center center;
+    background: url(../img/1-back.jpg) no-repeat 40%;
     background-size: cover;
     position: relative;
 }
@@ -296,17 +296,32 @@ header .header__wrapper{
     margin-top: 30px;
 }
 
+
+
 @media (max-width: 766px){
+
+    .about__content{
+        position: initial;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .about__content h1{
-        font-size: 30px;
+        padding: 5px;;
+        font-size: 20px;
+        width: 80%;
     }
 
     .about__content h2{
-        font-size: 25px;
+        width: 80%;
+        font-size: 18px;
     }
 
     .navigation, .aboutus{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .section__heading{
@@ -419,6 +434,8 @@ header .header__wrapper{
 
 @media (min-width: 991.98px) {
 
+    
+
     .about__content h1{
         font-size: 33px;
     }
@@ -474,3 +491,24 @@ header .header__wrapper{
     }
 }
   
+@media (max-width: 400px){
+    .abonement__heading{
+        font-size: 12px;
+    }
+
+    .abonement__desc{
+        font-size: 9px;
+    }
+
+    .spa__heading{
+        font-size: 12px;
+    }
+
+    .service__name{
+        font-size: 10px;
+    }
+
+    .service__price{
+        font-size: 10px;
+    }
+}
