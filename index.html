@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="assets/css/splide-default.min.css">
     <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/splide-extension-video.min.css">
+    <script src="assets/js/splide-extension-video.min.js"></script>
 </head>
 <body>
     <header>
@@ -36,11 +38,20 @@
     <section class="slider__section">
         <div class="container">
             <div class="section__heading">
-                Фотоальбом
+                Галерея
             </div>
             <div id="primary-slider" class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="assets/img/blueandred.jpg">
+                        </li>
+                        <li class="splide__slide"  data-splide-html-video="assets/img/video.mp4">
+                            <img src="assets/img/greenandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
                         <li class="splide__slide">
                             <img src="assets/img/blueandred.jpg">
                         </li>
@@ -50,6 +61,28 @@
                         <li class="splide__slide">
                             <img src="assets/img/neck.jpg">
                         </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -59,8 +92,39 @@
                         <li class="splide__slide">
                             <img src="assets/img/blueandred.jpg">
                         </li>
+                        <li class="splide__slide"  data-splide-html-video="assets/img/video.mp4">
+                            <img src="assets/img/greenandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        
+                        <li class="splide__slide">
+                            <img src="assets/img/blueandred.jpg">
+                        </li>
                         <li class="splide__slide">
                             <img src="assets/img/greenandred.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="assets/img/neck.jpg">
                         </li>
                         <li class="splide__slide">
                             <img src="assets/img/neck.jpg">
@@ -340,20 +404,25 @@
 		breakpoints : {
 			'600': {
 				fixedWidth: 66,
-				height    : 40,
+				height: 70,
 			}
 		},
 	} ).mount();
 	
 	var primarySlider = new Splide( '#primary-slider', {
 		type       : 'fade',
-		heightRatio: 0.5,
+		heightRatio: 0.55,
 		pagination : false,
 		arrows     : false,
 		cover      : true,
+        breakpoints : {
+			'600': {
+				height: 380,
+			}
+		},
 	} ); // do not call mount() here.
 	
-	primarySlider.sync( secondarySlider ).mount();
+	primarySlider.sync( secondarySlider ).mount( window.splide.Extensions );
 } );
     </script>
 
