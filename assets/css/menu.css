@@ -113,8 +113,9 @@ header .header__wrapper{
     color: #CE9B3D;
     font-size: 35px;
     font-weight: 700;
+    background-color: black;
     position: relative;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .section__heading:after{
@@ -154,19 +155,18 @@ header .container{
 
 .section__heading{
     text-align: center;
-    color: #CE9B3D;
+    color: white;
     font-size: 35px;
     font-weight: 700;
-    margin-top: 60px;
+    padding-top: 30px;
     position: relative;
-    margin-bottom: 70px;
 }
 
 .section__heading:after{
     content: "";
     position: absolute;
-    top: 60px;
     left: 0;
+    top: 95px;
     height: 8px;
     width: 100%;
     background: #CE9B3D;
