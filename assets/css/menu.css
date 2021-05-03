@@ -281,7 +281,7 @@ header .container{
     /*border:rgb(146, 64, 106) groove 7px;*/
     width: 100%;
     background-color: white;
-    text-align: center;
+    
     
     display: flex;
     flex-direction: column;
