@@ -1,0 +1,425 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+
+
+.about__section{
+    height: 100vh;
+    max-height: 1080px;
+    background: url(../img/1-back.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.about__section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.28  );
+    z-index: 1;
+}
+
+.about__content{
+    width: 37%;
+    height: 19%;
+    position: absolute;
+    left: 47%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.about__content h1{
+    background-color: black;
+    color: white;
+    z-index: 3;
+    padding: 3vh;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.about__content h2{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+
+
+header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 5;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation, .aboutus{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navigation{
+    margin-right: 70px;
+}
+
+.section__heading{
+    text-align: center;
+    color: #CE9B3D;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.section__heading:after{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    background: #CE9B3D;
+}
+
+
+.abonement{
+    margin-bottom: 30px;
+    width:47%;
+}
+
+.abonement__heading, .abonement__subheading{
+    margin: 0;
+    padding: 0;
+}
+
+.abonement__subheading{
+    margin-bottom: 10px;
+}
+.abonement__desc{
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.abonement__heading{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.abonement__subheading{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.abonement__price, .currency, .ot{
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.price__content{
+    text-align: right;
+}
+
+.abonements__section{
+    position: relative;
+}
+
+.abonement__backimg{
+    height: 120%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.abonement__wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.abonement__content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.abonement__content img{
+    width: 100%;
+    height: auto;
+}
+
+/***********/
+
+.tea__section{
+    margin-top: 30px;
+    position: relative;
+    background-image: url("../img/tea.jpg");
+    background-size: cover;
+
+}
+
+.tea{
+    margin-bottom: 30px;
+    
+
+}
+
+.menu__wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.menu__content{
+    display: flex;
+
+}
+
+.items__wrapper{
+    width: 50%;
+    height: 100%;
+    outline: 1px solid black;
+    outline-offset: -1px;
+}
+
+.menu__items{
+    height: 100%;
+    margin: 0 auto;
+    /*border:rgb(146, 64, 106) groove 7px;*/
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.menu__item{
+    margin: 10px 5px;
+    text-transform: uppercase;
+}
+
+.category__name{
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    /*border:rgb(146, 64, 106) groove 7px;*/
+}
+
+.tea__name{
+    width: 50%;
+    border: none;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+}
+
+.tea__content{
+    width: 100%;
+    flex-direction: column;
+}
+
+.tea__items{
+    width: 100%;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 0px;
+    border: none;
+}
+
+.tea__name1{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-color: /*#CE9B3D*/ black;
+    color: white;
+
+}
+
+.smoothies__wrapper{
+    width: 100%;
+    padding: 0;
+}
+
+.smoothies__name{
+    margin-bottom: 0px; 
+    background-color: /*#CE9B3D*/ black;
+    color: white;
+}
+
+.smoothies__content{
+    background-image: url(../img/smoothies.jpg);
+    background-size: cover;
+}
+
+.smoothies__desc{
+    margin-top: 0px;
+    font-size: 15px;
+    color: white;
+    text-transform: none;
+    background-color: /*#CE9B3D*/ black;
+}
+
+.coffee__content{
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+
+.lemonade__name{
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    background-color: /*#CE9B3D*/ black;
+    color: white;
+    
+}
+
+.lemonade__content{
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+
+.coffee__wrapper{
+    width: 100%;
+    padding: 0;
+}
+
+.lemonade__wrapper{
+    width: 100%;
+}
+
+.lemonade__items{
+    
+    padding: 0px 0px;
+}
+
+.lemonade__item{
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lemonade__desc{
+    padding: 25px 0px; 
+}
+
+.cocktail__section{
+    margin-top: 30px;
+    position: relative;
+    background-image: url("../img/cocktail.jpg");
+    background-size: cover;
+
+}
+
+@media (max-width: 575.98px){
+    .lemonade__item{
+    display: block;
+  }
+  .items__wrapper{
+    outline: none;
+  }
+  .container{
+    padding: 0;
+  }
+}
+
+@media (max-width: 350px){
+    body{
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 575.98px){
+  .container {
+    width: 100vw;
+    margin: auto;
+    padding: 0;
+  }
+  .menu__section{
+    width: 100vw;
+    padding: 0;
+    
+  }
+  .items__wrapper{
+    outline: none;
+  }
+  .lemonade__wrapper{
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }
+  .tea__items{
+    outline: 1px solid black;
+    outline-offset: -1px;
+  }
+  
+}
+
+@media (min-width: 767.98px){
+  .container {
+    max-width: 720px;   
+  }
+  .category__name{
+    padding: 13px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1199.98px){
+  .container {
+    max-width: 1140px;
+  }
+  .menu__items{
+    width: 100%;
+  }
+}
