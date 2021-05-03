@@ -9,12 +9,43 @@
     <title>"D'oro" Wellness & Beauty Club</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <script src="assets/js/splide.min.js"></script>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets//img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/splide-extension-video.min.css">
+    <script src="assets/js/splide-extension-video.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Первый женский FitnessCenter&SPA в Павлодаре"> 
+    <meta name="Keywords" content="d'oro, D'Oro, фитнесс, спа, Павлодар, салон красоты"> 
 </head>
 <body>
     
-    
-
+    <header>
+        <div class="header__wrapper">   
+            <div class="navbar">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Наши услуги
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="index.html#about">О Нас</a>
+                            <a href="index.html#about">Абонементы</a>
+                            <a href="index.html#spa">SPA</a>
+                            <a href="index.html#extra">Доп. услуги</a>
+                            <a href="menu.html">Меню</a>
+                            <a href="massage.html">Массажный кабинет</a>
+                        </div>
+                    </div> 
+            </div> 
+        </div> 
+</header>
+<div class="section__heading">
+    Галерея
+</div>
     <section class="container menu__section tea__section">
+       
             <div class="menu__wrapper">
                 <h2 class="category__name tea__name">Чаи</h2>
                 <div class="menu__content tea__content">
@@ -253,5 +284,27 @@
                 </div>
             </div>
     </section>
+
+    <script>
+    
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+    
+    
+        const pageWidth = document.documentElement.scrollWidth
+        if (pageWidth<500){
+            document.querySelector(".dropbtn").innerHTML = 'Услуги <i class="fa fa-caret-down"></i>'
+        }
+        </script>
 </body>
 </html>
