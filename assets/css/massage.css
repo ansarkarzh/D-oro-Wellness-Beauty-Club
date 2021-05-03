@@ -323,6 +323,7 @@ header .container{
 }
 
 .items__wrapper{
+    background-color: white;
     width: 50%;
     padding: 0;
     margin: 0;
@@ -425,7 +426,7 @@ aside{
 }
 
 .fa-caret-down{
-    color: #CE9B3D;
+    color: white;
 }
 
 
