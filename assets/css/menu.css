@@ -1,6 +1,5 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 100px;
 
     background: url(../img/Zinc.jpg) repeat-y center ;
 }
@@ -113,8 +112,9 @@ header .header__wrapper{
     color: #CE9B3D;
     font-size: 35px;
     font-weight: 700;
+    background-color: black;
     position: relative;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .section__heading:after{
@@ -154,19 +154,18 @@ header .container{
 
 .section__heading{
     text-align: center;
-    color: #CE9B3D;
+    color: white;
     font-size: 35px;
     font-weight: 700;
-    margin-top: 60px;
+    padding-top: 30px;
     position: relative;
-    margin-bottom: 70px;
 }
 
 .section__heading:after{
     content: "";
     position: absolute;
-    top: 60px;
     left: 0;
+    top: 95px;
     height: 8px;
     width: 100%;
     background: #CE9B3D;
@@ -247,6 +246,7 @@ header .container{
     position: relative;
     background-image: url("../img/tea.jpg");
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -281,7 +281,7 @@ header .container{
     /*border:rgb(146, 64, 106) groove 7px;*/
     width: 100%;
     background-color: white;
-    text-align: center;
+    
     
     display: flex;
     flex-direction: column;
@@ -292,6 +292,7 @@ header .container{
 .menu__item{
     margin: 10px 5px;
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 .category__name{
@@ -549,9 +550,8 @@ header .container{
 }
 
 .fa-caret-down{
-    color: #CE9B3D;
+    color: white;
 }
-
 
 @media (max-width: 500px) {
 
@@ -641,3 +641,28 @@ footer{
   
   }
 }
+@media (max-width: 767.98px){
+    .menu__item{
+        font-size: 6px;
+    }
+    .section__heading{
+        font-size: 20px;
+    }
+    .category__name{
+        font-size: 16px;
+    }
+    .tea__name1{
+        font-size: 10px;
+    }
+    .section__heading:after{
+        top: 83px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .menu__item{
+        font-size: 8px;
+    }
+}
+

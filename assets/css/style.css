@@ -608,7 +608,7 @@ header .header__wrapper{
 }
 
 .fa-caret-down{
-    color: #CE9B3D;
+    color: white;
 }
 
 @media (max-width: 500px) {
