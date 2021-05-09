@@ -503,15 +503,15 @@ header .header__wrapper{
   
 @media (max-width: 400px){
     .abonement__heading{
-        font-size: 12px;
+        font-size: 9px;
     }
 
     .abonement__subheading{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .abonement__desc{
-        font-size: 9px;
+        font-size: 8px;
     }
 
     .spa__heading{
@@ -524,6 +524,15 @@ header .header__wrapper{
 
     .service__price{
         font-size: 10px;
+    }
+
+    .price__content{
+    	margin-top: 0;
+    }
+
+    .abonement__price,
+    .currency{
+    	font-size: 8px;
     }
 }
 
