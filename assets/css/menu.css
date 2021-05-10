@@ -354,6 +354,7 @@ header .container{
 .smoothies__content{
     background-image: url(../img/smoothies.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 .smoothies__desc{
@@ -370,6 +371,7 @@ header .container{
     width: 100%;
     flex-direction: column;
     margin: 0;
+    background-position: center;
 }
 
 .lemonade__name{
@@ -381,18 +383,31 @@ header .container{
 }
 
 .lemonade__content{
+    background-image: url(../img/lemonade.jpg);
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+}
+
+.coffee__content{
+    background-image: url(../img/coffee.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     flex-direction: column;
     margin: 0;
 }
 
 .coffee__wrapper{
-    width: 100%;
-    padding: 0;
+    width: 50%;
 }
 
 .lemonade__wrapper{
-    width: 100%;
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto; 
 }
 
 .lemonade__items{
@@ -415,6 +430,7 @@ header .container{
     position: relative;
     background-image: url("../img/cocktail.jpg");
     background-size: cover;
+    background-position: center;
 
 }
 
