@@ -731,3 +731,50 @@ footer{
 #spaimg{
     height: 100%;
 }
+
+
+/*              trainers            */
+
+
+.trainer__card{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;  
+    border-bottom: #CE9B3D solid 3px;  
+    justify-content: flex-start;
+}
+
+.viseversa{
+    flex-direction: row-reverse;
+}
+
+.name{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color:#CE9B3D;
+}
+
+.about__trainer{
+    width: 60%;
+}
+
+.trainer__desc{
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.trainer__img{
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 5%;
+}
+
+.tel__num{
+    color: black;
+}
+
+.trainer__list{
+    padding: 0 15px ;
+}
