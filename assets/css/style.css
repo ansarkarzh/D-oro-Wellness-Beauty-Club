@@ -742,12 +742,13 @@ footer{
 
 
 .trainer__card{
+    padding: 10px;
     display: flex;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     margin-bottom: 15px;  
     border-bottom: #CE9B3D solid 3px;  
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .viseversa{
@@ -755,24 +756,22 @@ footer{
 }
 
 .name{
-    text-align: center;
     font-size: 25px;
     margin-bottom: 5px;
     color:#CE9B3D;
 }
 
 .about__trainer{
-    width: 60%;
+    width: 55%;
 }
 
 .trainer__desc{
     white-space: pre-wrap;
-    text-align: center;
+    text-align: left;
 }
 
 .trainer__img{
-    width: 30%;
-    margin-right: 20px;
+    width: 40%;
     border-radius: 5%;
 }
 
@@ -782,4 +781,40 @@ footer{
 
 .trainer__list{
     padding: 0 15px ;
+}
+
+@media (max-width: 400px){
+    .name{
+        font-size: 18px;
+    }
+
+    .trainer__desc{
+        font-size: 12px;
+    }
+    .trainer__list{
+        font-size: 12px;
+    }
+    .trainer__data{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 300px){
+    .name{
+        font-size: 12px;
+    }
+
+    .trainer__desc{
+        font-size: 8px;
+    }
+    .trainer__list{
+        font-size: 8px;
+    }
+    .trainer__data{
+        font-size: 8px;
+    }
+}
+
+.whitepower{
+    background-color: white;
 }
