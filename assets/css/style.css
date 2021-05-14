@@ -783,7 +783,14 @@ footer{
     padding: 0 15px ;
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
+    
+    .trainer__img{
+        width: 50%;
+    }
+    .about__trainer{
+        width: 45%;
+    }
     .name{
         font-size: 18px;
     }
@@ -799,7 +806,13 @@ footer{
     }
 }
 
-@media (max-width: 300px){
+@media (max-width: 400px){
+    .trainer__img{
+        width: 50%;
+    }
+    .about__trainer{
+        width: 45%;
+    }
     .name{
         font-size: 12px;
     }
