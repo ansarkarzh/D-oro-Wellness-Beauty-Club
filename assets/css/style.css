@@ -818,3 +818,64 @@ footer{
 .whitepower{
     background-color: white;
 }
+
+.helltowomen{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.helltowomen h1,h4,h2,h5{
+    margin: 0;
+}
+
+.women{
+    background-color: white;
+    padding: 10px;
+}
+
+.welcum{ 
+    font-size: 36px;
+}
+
+.welcum h5{
+    font-weight: 400;
+}
+
+.helltowomen h4{
+    font-weight: 400;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.helltowomen h1{
+    font-size: 70px;
+}
+
+.open{
+    margin: 0 auto;
+    width: 15%;
+    margin-top: 50px; 
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #CE9B3D;
+}
+
+.ualikhan{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.ualikhan div{
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.amazon{
+    font-size: 16px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
